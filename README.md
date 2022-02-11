@@ -9,11 +9,11 @@ setup.CleanRDBMS()
 
 b. create tables
 ```
-require.Nil(t, cgorm.MigrateDBSchema())
+require.NoError(t, cgorm.MigrateDBSchema())
 ```
 
 c. insert data
-Pointers should be used to pass to ORM with data to insert.
+Pointers should be used to pass to ORM the data to insert.
 
 ## Persisting structures
 Definition should reside in /pkg/persistence package. 
